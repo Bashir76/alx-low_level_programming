@@ -18,4 +18,3 @@ while (c <= 'z')
 
 return (0);
 }
-
