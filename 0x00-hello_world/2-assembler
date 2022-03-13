@@ -1,3 +1,7 @@
 #!/bin/bash
+<<<<<<< HEAD
 #include <stdio.h> /** *main -entry point* * Return: Always 0 (Success)
  */ int main(void) { return (0); }
+=======
+gcc -S $CFILE
+>>>>>>> bddb0a10ca4f51e3ec019aa3f852579f62ebefd0

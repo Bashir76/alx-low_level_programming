@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 /**
  * main - Entry point
  *
@@ -8,3 +9,6 @@ int main(void)
 {
     return (0);
 }
+=======
+gcc -c $CFILE
+>>>>>>> bddb0a10ca4f51e3ec019aa3f852579f62ebefd0
