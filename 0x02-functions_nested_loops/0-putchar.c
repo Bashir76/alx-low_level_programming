@@ -1,18 +1,20 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
-* main - main block
-*Write a program that prints _putchar, followed by a new line.
-*The program should return 0
-*/
-int main(void)
+ * print_alphabet - prints the alphabet, in lowercase, followed by a new line
+ */
+void print_alphabet(void)
 {
-	int i;
+	char ch;
 
-	for (i = 0; i < 10; i++)
+	ch = 'a';
+
+	while (ch <= 'z')
 	{
-		printf("%i", i);
+		_putchar(ch);
+		ch++;
 	}
-	putchar('\n');
 
-	return (0);
+	_putchar('\n');
 }
