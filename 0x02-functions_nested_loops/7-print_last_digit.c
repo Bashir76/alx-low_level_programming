@@ -1,20 +1,29 @@
 #include "main.h"
 
 /**
- * print_last_digit - Check Johnel
- * @r: An integer input
- * Description: This function prints the last digit of a number
- * Return: last digit of number r
+ *  print_last_digit - last digit
+ *
+ *@n: The int to print
+ * Return: Always 0.
  */
-int print_last_digit(int r)
+
+int print_last_digit(int n)
+
 {
-	int n;
+int last_digit;
 
-	if (r < 0)
-		n = -1 * (r % 10);
-	else
-		n = r % 10;
+if (n < 0)
+{
+last_digit = (-1 * (n % 10));
+_putchar (last_digit + '0');
+return (last_digit);
+}
 
-	_putchar((n % 10) + '0');
-	return (n % 10);
+else
+{
+last_digit = (n % 10);
+_putchar (last_digit + '0');
+return (last_digit);
+}
+
 }
