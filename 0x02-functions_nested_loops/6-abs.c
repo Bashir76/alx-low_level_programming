@@ -1,15 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *_abs - Check Johnel
- * @r: An integre input
- * Description: This function returns absolute value of a number
- * Return: Absolut value of number r
+ * _abs - value absolute
+ *
+ *@n: The int to print
+ * Return: Always 0.
  */
-int _abs(int r)
+
+int _abs(int n)
 {
-	if (r >= 0)
-		return (r);
-	else
-		return (r * -1);
+
+if (n < 0)
+{
+return (n * (-1));
+}
+
+else if (n == 0)
+{
+return (0);
+}
+
+else
+{
+return (n);
+}
+
 }
