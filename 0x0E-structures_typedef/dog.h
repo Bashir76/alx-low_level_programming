@@ -1,24 +1,25 @@
-#include <stdio.h>
-#include "dog.h"
+#ifndef DOG_H
+#define DOG_H
+#include <stdlib.h>
 
 /**
- * main - check the code
+ * struct dog - Describe a dog and some additional data
+ * @name: String name of the dog
+ * @age: float age of the dog
+ * @owner: String name of the owner of the dog
  *
- * Return: Always 0.
+ * Description: Dog and owner data
  */
-int main(void)
+typedef struct dog
 {
-    struct dog my_dog;
+	char *name;
+	float age;
+	char *owner;
+} dog_t;
 
-    my_dog.name = "Poppy";
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
-    typedep "poppy"=char *;
-    typedep "3.5"=float;
-    typedep "Bob"=char *;
-    
-     return (0);
-
-}
+#endif
